@@ -4,17 +4,33 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11/assets/favicon-4a748afd.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>: Search images :</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     
     <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-c9db6b34.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-0fc460d7.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-4b066c51.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-f8ccac76.css">
   </head>
   <body>
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/goit-js-hw-11/assets/javascript-8dac5379.svg" alt="" />
-    </section>
+    <form id="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        placeholder="Search images..."
+        required
+      />
+      <button class="search-button" type="submit">Search</button>
+    </form>
+    <div class="loader"></div>
+    <div class="loader-text">Loading images, please wait...</div>
+    <div class="gallery"></div>
+
     
   </body>
 </html>
